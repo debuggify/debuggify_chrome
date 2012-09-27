@@ -1,0 +1,28 @@
+{
+    "name": "__MSG_extension_name__",
+    "version": "0.0.1",
+    "description": "__MSG_extension_description__",
+    "permissions": [
+	    "tabs",
+	    "contextMenus",
+	    "http://*/*", "https://*/*"
+    ],
+
+    "background_page": "background.html",
+
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["vendor/debuggify.logger.http.js", "app/log.js"],
+            "css": ["css/debuggify.css"],
+            "run_at":"document_end",
+            "all_frames": true
+        }
+    ],
+
+    "browser_action": {
+        "default_title": "Debuggify"
+    },
+
+    "default_locale": "en"
+}

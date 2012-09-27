@@ -1,0 +1,32 @@
+{
+    "extension_name": {
+        "message": "Debuggify for Google Chrome™"
+    },
+	"extension_description":{
+		"message": "Debug The Web"
+	},
+    "options": {
+        "message": "Options"
+    },
+    "sign_in": {
+        "message": "Sign In"
+    },
+    "or": {
+        "message": "or"
+    },
+    "cancel": {
+        "message": "cancel"
+    },
+    "archive": {
+        "message": "Search Outbox"
+    },
+    "not_ready": {
+        "message": "This Debuggify App has not been initialized yet."
+    },
+    "try_again": {
+        "message": "Try again"
+    },
+    "more": {
+        "message": "More"
+    }
+}
