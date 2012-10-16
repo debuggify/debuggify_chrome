@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head><title>Debuggify Options</title></head>
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<script src="vendor/jquery/jquery-1.8.2.min.js"></script>
+
+
+
+<body>
+
+<div class="bs-docs-example form-horizontal">
+  <legend>Settings</legend>
+  <div class="control-group">
+    <label class="control-label" for="inputApikey">Apikey</label>
+    <div class="controls">
+      <input type="text" id="apikey" placeholder="Apikey">
+      <span class="help-inline">Get the Apikey from Debuggify Dashboard</span>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputUrl">Url</label>
+    <div class="controls">
+      <input type="text" id="url" placeholder="Url">
+      <span class="help-inline">Ex: google.com, flipkart.com, .in</span>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <button class="btn" id="save">Save</button>
+      <span id="save_text" class="help-inline hide">Saved.</span>
+    </div>
+  </div>
+</div>
+
+
+<script src="lib/options.js"></script>
+</body>
+</html>
