@@ -26,13 +26,22 @@ function injectScript(url) {
   })();
 }
 
+function injectCode(actualCode) {
+    var script = document.createElement('script');
+    script.textContent = actualCode;
+    (document.head||document.documentElement).appendChild(script);
+    script.parentNode.removeChild(script);
+}
+
 chrome.extension.sendRequest({method: "processTab", args: [document.location] }, function(response) {
 
-  console.log(response.data);
+  // console.log(response.data);
 
   if(!response.data) {
     return false;
   }
+  // eval.call(window, response.data);
+  // injectScript(response.data);
+  injectCode(response.data);
 
-  injectScript(response.data);
 });
