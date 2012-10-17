@@ -1,6 +1,6 @@
 {
     "name": "__MSG_extension_name__",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "manifest_version": 2,
     "description": "__MSG_extension_description__",
     "permissions": [
@@ -31,7 +31,6 @@
 
     "browser_action": {
         "default_icon": "images/debuggify.png",
-        // "default_popup": "popup.html",
         "default_title": "Debuggify"
 
     },
