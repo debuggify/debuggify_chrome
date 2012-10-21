@@ -1,1 +1,1 @@
-zip -r zipfile.zip . -x ".*"
+zip -r debuggify.zip . -x ".*"
